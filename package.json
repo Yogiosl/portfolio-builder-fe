@@ -19,8 +19,11 @@
   },
   "homepage": "https://github.com/FreeIons/portfolio-builder-fe#readme",
   "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "mini-css-extract-plugin": "^2.7.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
   },
   "devDependencies": {
     "@babel/core": "^7.21.8",
