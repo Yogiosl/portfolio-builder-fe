@@ -1,6 +1,7 @@
 import React from "react";
 import { PrimaryButton } from "../HOC/button";
 import { useNavigate } from "react-router";
+import "../../assets/style.less";
 const Home = () => {
   const navigate = useNavigate();
   const onClick = () => {
