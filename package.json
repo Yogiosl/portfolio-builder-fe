@@ -4,8 +4,10 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx webpack && npx webpack serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack -p --config webpack.prod.js",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
   },
   "repository": {
     "type": "git",
