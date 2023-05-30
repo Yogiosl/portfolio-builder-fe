@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Card, Button, Checkbox, Form, Input } from "antd";
+import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import { GoogleLoginButton } from "react-social-login-buttons";
 import { LoginSocialGoogle } from "reactjs-social-login";
+
+import "./login.less";
+
 const onFinish = (values) => {
   console.log("Success:", values);
 };
@@ -10,21 +14,21 @@ const onFinishFailed = (errorInfo) => {
 };
 
 const Login = () => {
+  // const handleLinkedInAuth = () => {
+  //   window.IN.User.authorize(() => {
+  //     // LinkedIn sign-in success
+  //     // You can make API calls or handle the sign-in response here
+  //   });
+  // };
+
   return (
     <>
       <div className="background">
         <Card className="loin-card">
+          <img src="" alt="welcome image" />
+          <div>Welcome</div>
           <Form
             name="basic"
-            labelCol={{
-              span: 8,
-            }}
-            wrapperCol={{
-              span: 16,
-            }}
-            style={{
-              maxWidth: 600,
-            }}
             initialValues={{
               remember: true,
             }}
@@ -33,7 +37,6 @@ const Login = () => {
             autoComplete="off"
           >
             <Form.Item
-              label="Username"
               name="username"
               rules={[
                 {
@@ -42,11 +45,12 @@ const Login = () => {
                 },
               ]}
             >
-              <Input />
+              <Input
+                prefix={<UserOutlined className="site-form-item-icon" />}
+                placeholder="Username"
+              />
             </Form.Item>
-
             <Form.Item
-              label="Password"
               name="password"
               rules={[
                 {
@@ -55,26 +59,14 @@ const Login = () => {
                 },
               ]}
             >
-              <Input.Password />
+              <Input
+                prefix={<LockOutlined className="site-form-item-icon" />}
+                type="password"
+                placeholder="Password"
+              />
             </Form.Item>
-
-            <Form.Item
-              name="remember"
-              valuePropName="checked"
-              wrapperCol={{
-                offset: 8,
-                span: 16,
-              }}
-            >
-              <Checkbox>Remember me</Checkbox>
-            </Form.Item>
-
-            <Form.Item
-              wrapperCol={{
-                offset: 8,
-                span: 16,
-              }}
-            >
+            <hr />
+            <Form.Item>
               <Button type="primary" htmlType="submit">
                 Submit
               </Button>
@@ -97,6 +89,11 @@ const Login = () => {
                 <GoogleLoginButton />
               </LoginSocialGoogle>
             </Form.Item>
+            {/* <Form.Item>
+              <button onClick={handleLinkedInAuth}>
+                Sign in with LinkedIn
+              </button>
+            </Form.Item> */}
           </Form>
         </Card>
       </div>
