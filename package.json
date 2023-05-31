@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/FreeIons/portfolio-builder-fe/issues"
   },
-  "homepage": "https://freeions.github.io/portfolio-builder-fe/",
+  "homepage": "https://freeions.github.io/portfolio-builder-fe/public/index.html",
   "dependencies": {
     "antd": "^5.5.1",
     "clean-webpack-plugin": "^4.0.0",
