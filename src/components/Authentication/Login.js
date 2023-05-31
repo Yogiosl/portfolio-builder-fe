@@ -14,13 +14,6 @@ const onFinishFailed = (errorInfo) => {
 };
 
 const Login = () => {
-  // const handleLinkedInAuth = () => {
-  //   window.IN.User.authorize(() => {
-  //     // LinkedIn sign-in success
-  //     // You can make API calls or handle the sign-in response here
-  //   });
-  // };
-
   return (
     <>
       <div className="background">
@@ -89,11 +82,6 @@ const Login = () => {
                 <GoogleLoginButton />
               </LoginSocialGoogle>
             </Form.Item>
-            {/* <Form.Item>
-              <button onClick={handleLinkedInAuth}>
-                Sign in with LinkedIn
-              </button>
-            </Form.Item> */}
           </Form>
         </Card>
       </div>

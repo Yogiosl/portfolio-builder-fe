@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/FreeIons/portfolio-builder-fe/static/js/main.d070a7e2.js",
+    "static/media/login.less": "/FreeIons/portfolio-builder-fe/static/media/login.569f09ce5f69fba86ca4.less",
+    "index.html": "/FreeIons/portfolio-builder-fe/index.html",
+    "static/media/style.less": "/FreeIons/portfolio-builder-fe/static/media/style.cad7ac2ec405721d5f00.less",
+    "main.d070a7e2.js.map": "/FreeIons/portfolio-builder-fe/static/js/main.d070a7e2.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d070a7e2.js"
+  ]
+}
