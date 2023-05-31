@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npx webpack && npx webpack serve",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "build": "react-scripts build",
     "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
   },
@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/FreeIons/portfolio-builder-fe/issues"
   },
-  "homepage": "https://github.com/FreeIons/portfolio-builder-fe#readme",
+  "homepage": "https://FreeIons.github.io/portfolio-builder-fe",
   "dependencies": {
     "antd": "^5.5.1",
     "clean-webpack-plugin": "^4.0.0",
