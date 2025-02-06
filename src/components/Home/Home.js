@@ -6,6 +6,7 @@ import "../Authentication/login.less";
 import "../../assets/style.less";
 
 const Home = () => {
+  const [isData,setIsData] = useState("false")
   const navigate = useNavigate();
   const onClick = () => {
     navigate("/login");
