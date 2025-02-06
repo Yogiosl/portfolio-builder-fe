@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { PrimaryButton } from "../HOC/button";
 import { useNavigate } from "react-router";
 
@@ -10,6 +10,7 @@ const Home = () => {
   const onClick = () => {
     navigate("/login");
   };
+  useEffect(()=>{},[])
   return (
     <div>
       <h1>Home</h1>
